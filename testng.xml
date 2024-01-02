@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Registrationsuit">
+  <test thread-count="2" name="ChromeTest">
+  <parameter name="multibrowser" value="chrome"></parameter>
+    <classes>
+      <class name="TestClass.Verifyregisterpage"/>
+    </classes>
+  </test> <!-- NpTest -->
+  
+  <test thread-count="2" name="EdgeTest">
+  <parameter name="multibrowser" value="edgebrowser"></parameter>
+    <classes>
+      <class name="TestClass.Verifyregisterpage"/>
+    </classes>
+  </test> <!-- NpTest -->
+  
+</suite> <!-- Registrationsuit -->
